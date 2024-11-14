@@ -16,7 +16,7 @@ String? findWarehouseIdFN(
   List<WarehouseDTStruct> warehouseList,
 ) {
   for (var warehouse in warehouseList) {
-    if (warehouse.source_id == shopId) {
+    if (warehouse.sourceId == shopId) {
       return warehouse.id;
     }
   }
