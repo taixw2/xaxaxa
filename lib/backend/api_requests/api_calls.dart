@@ -67,6 +67,15 @@ class GetWarehouseListCall {
         response,
         r'''$.data[:].source_id''',
       ));
+  List<WarehouseDTStruct>? data(dynamic response) => (getJsonField(
+        response,
+        r'''$.data''',
+        true,
+      ) as List?)
+          ?.withoutNulls
+          .map((x) => WarehouseDTStruct.maybeFromMap(x))
+          .withoutNulls
+          .toList();
 }
 
 class GetLocationListCall {

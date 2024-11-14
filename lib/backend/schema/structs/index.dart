@@ -16,3 +16,4 @@ export 'location_tag_struct.dart';
 export 'location_tags_struct.dart';
 export 'order_history_data_struct.dart';
 export 'order_history_response_struct.dart';
+export 'warehouse_d_t_struct.dart';
