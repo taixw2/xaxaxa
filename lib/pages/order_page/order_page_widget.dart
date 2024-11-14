@@ -119,7 +119,7 @@ class _OrderPageWidgetState extends State<OrderPageWidget> {
                     filterDate: dateTimeFormat(
                         "y-M-d",
                         dateTimeFromSecondsSinceEpoch(
-                            getCurrentTimestamp.microsecondsSinceEpoch)),
+                            getCurrentTimestamp.secondsSinceEpoch)),
                     token: FFAppState().TOKEN,
                     session: FFAppState().SESSION,
                   ),
